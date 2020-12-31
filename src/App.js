@@ -2,13 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log("Testing yaml file")
+
+  //app setup. Tunnel content through here
   return (
-    <div className="App">
-      <header className="App-header">
-        fuck you ryan
-      </header>
-    </div>
+    <main>
+      Port Builder App. 
+    </main>
   );
 }
 
