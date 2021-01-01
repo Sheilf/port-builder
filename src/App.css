@@ -1,0 +1,9 @@
+main {
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid green;
+
+}
+

@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
-import { ChartBuilder } from './ChartBuilder/ChartBuilder'
+import './styles/flex.css'
+import { Builder } from './Builder/Builder'
 
 function App() {
 
   //app setup. Tunnel content through here
   return (
-    <main>
-      Port Builder App. 
-      <ChartBuilder />
+    <main className="flex-column-centered">
+      Port Building App.
+
+      <Builder />
 
 
     </main>
