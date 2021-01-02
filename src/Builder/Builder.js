@@ -9,15 +9,13 @@ import {CardGrid} from '../CardGrid/CardGrid'
 
 export const Builder = () => {
 
-  const [mode, setMode] = useState('chart')
+  const [mode, setMode] = useState('card')
 
-    //   useEffect(() =>{
-
-
-    //   }, [mode])
-
-  const isModeChart = mode === 'chart'
+  const isModeChart = mode === 'block'
   const isModeCard  = mode === 'card'
+
+
+  //get database data and set mode
 
   return (
 
@@ -29,8 +27,8 @@ export const Builder = () => {
         </div>
 
         <ButtonGroup size="lg" className="mb-2">
-            <Button onClick = { () => setMode('chart') } style={{ margin: '16px', border: isModeChart ? '2px solid cyan': null }}>Chart mode</Button>
-            <Button onClick = { () => setMode('card')  } style={{ margin: '16px', border: isModeCard ? '2px solid cyan': null }}>Card mode</Button>
+            <Button onClick = { () => setMode('block') } style={{ margin: '16px', border: isModeChart ? '2px solid #7E93E8': null }}>Blocks</Button>
+            <Button onClick = { () => setMode('card')  } style={{ margin: '16px', border: isModeCard ? '2px solid #7E93E8': null }}>Cards</Button>
         </ButtonGroup>
 
 

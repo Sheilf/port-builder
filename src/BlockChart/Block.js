@@ -6,23 +6,16 @@ import { Input } from './Input'
 
 
 
-export const InputBuilder = () => {
+export const Block = (props) => {
 
- 
+  const [block, setBlock] = useState({})
   return (
     
 
     <section className="flex-column-centered">
-        Input Builder
 
 
-        <Input />
-        <Input />
-        <Input />
-        <Input />
-        <Input />
-        <Input />
-        <Input />
+      { props.blockChart.map(item => <Input />) }
 
         
 
