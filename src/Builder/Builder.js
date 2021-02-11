@@ -11,6 +11,22 @@ export const Builder = () => {
 
   const [mode, setMode] = useState('card')
 
+  const [cards, setCards] = useState([ 
+    {},
+    {},
+    {}
+  ])
+
+  const [blocks, setBlocks] = useState([
+    {},
+    {},
+    {},
+
+  ])
+
+
+
+
   const isModeChart = mode === 'block'
   const isModeCard  = mode === 'card'
 
@@ -36,9 +52,9 @@ export const Builder = () => {
         {/* conditional re-render ok for now. May change based on API setup */}
         {
             isModeChart ? 
-            <BlockChart />
+            <BlockChart blocks={blocks}/>
             :
-            <CardGrid />
+            <CardGrid cards={cards}/>
         }
     </section>
 
